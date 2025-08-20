@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Blend - Ceylon's Organic Treasures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="IMG_6486.JPG" alt="OG Blend Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>OG Blend</h1>
+                        <span>Ceylon's Organic Treasures</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ceylon's Organic Treasures</h1>
+                <p>Experience the authentic taste of Sri Lankan spices, sourced directly from organic farms</p>
+                <button class="cta-button" onclick="scrollToProducts()">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200/D2691E/FFFFFF?text=Organic+Ceylon+Cinnamon+Powder+1lb" alt="Organic Ceylon Cinnamon Powder">
+                        <h3>Organic Ceylon Cinnamon Powder</h3>
+                        <p>Premium quality finely ground cinnamon - 1 pound</p>
+                        <div class="price">Available on Amazon</div>
+                        <button class="buy-button" onclick="amazonSoon('Organic Ceylon Cinnamon Powder 1lb')">Coming Soon</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200/8B4513/FFFFFF?text=Organic+Ceylon+Cinnamon+Sticks+1oz" alt="Organic Ceylon Cinnamon Sticks">
+                        <h3>Organic Ceylon Cinnamon Sticks</h3>
+                        <p>Premium quality whole cinnamon sticks - 1 oz</p>
+                        <div class="price">Available on Amazon</div>
+                        <button class="buy-button" onclick="amazonSoon('Organic Ceylon Cinnamon Sticks 1oz')">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Ceylon Cinnamon</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>The True Cinnamon</h3>
+                        <p>Ceylon cinnamon, also known as "true cinnamon," is native to Sri Lanka and is considered the finest cinnamon in the world. Unlike common cassia cinnamon, Ceylon cinnamon has a delicate, sweet flavor and contains significantly lower levels of coumarin.</p>
+                        <div class="certifications">
+                            <div class="cert-badge">USDA Organic</div>
+                            <div class="cert-badge">Kosher</div>
+                            <div class="cert-badge">GMO Free</div>
+                            <div class="cert-badge">Vegan Friendly</div>
+                            <div class="cert-badge">Filler Free</div>
+                        </div>
+                        <ul>
+                            <li>✓ 100% Organic & Natural</li>
+                            <li>✓ Directly sourced from Sri Lankan farms</li>
+                            <li>✓ Low coumarin content</li>
+                            <li>✓ Premium quality guaranteed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="contact-subtitle">Drop us a line!</p>
+                <div class="contact-content">
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                        <p class="signup-text">Sign up for our email list for updates, promotions, and more.</p>
+                        <button type="submit" class="send-button">Send</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email:</strong> info@ogblend.store
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1 (833) OG-BLEND (64-25363)
+                        </div>
+                        <div class="contact-item">
+                            <strong>Imported and Distributed by:</strong><br>
+                            YSM Trading Corp<br>
+                            244 Madison Ave, #1156<br>
+                            New York, NY 10016, USA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OG Blend. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
