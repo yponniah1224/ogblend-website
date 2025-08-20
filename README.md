@@ -14,7 +14,7 @@ git init
 git add .
 git commit -m "Initial website files"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/ogblend-website.git
+git remote add origin git@github.com:YOUR_USERNAME/ogblend-website.git
 git push -u origin main
 ```
 
