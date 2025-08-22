@@ -18,6 +18,18 @@ function amazonSoon(productName) {
     window.location.href = mailtoLink;
 }
  
+function showImage(dot, index) {
+    const card = dot.closest('.product-card');
+    const images = card.querySelectorAll('.product-img');
+    const dots = card.querySelectorAll('.dot');
+   
+    images.forEach(img => img.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+   
+    images[index].classList.add('active');
+    dot.classList.add('active');
+}
+ 
 function submitForm(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
